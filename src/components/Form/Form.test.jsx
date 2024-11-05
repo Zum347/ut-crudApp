@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import Form from '.';
-
+import userEvent from '@testing-library/user-event';
+import { expect } from 'vitest';
 
 test('formu gönderince "addUser parametrelerle çalışıyor mu?"', async () => {
     const mockFn =vi.Fn();
@@ -24,6 +25,7 @@ test('formu gönderince "addUser parametrelerle çalışıyor mu?"', async () =>
     mail: 'firat@gmail.com',
     age: '59',
    });
+   
    expect(nameInp.value).toBe('');
    expect(mailInp.value).toBe('');
    expect(ageInp.value).toBe('');
