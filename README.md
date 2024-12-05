@@ -1,5 +1,3 @@
-# React + Vite
-
 # Test Kütüphaneleri
 
 - @testing-library/jest-dom
